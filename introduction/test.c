@@ -1,11 +1,16 @@
 #include <stdio.h>
 
+/*
+ * TO EXECUTE CODE:
+ * 1) gcc program_name.c -o my_program_name
+ * 2) ./my_program_name
+*/
+
 int main(){
-    printf("First C Prgram");
-    return 0;
+	void print();
+	return 0;
+}
 
-    /*
-    To execute 
-    */
-
+void print_hello(){
+	printf("Welcome to my first C Program");)
 }
