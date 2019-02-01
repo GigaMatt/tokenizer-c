@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-main(){
+/* NOTES FROM WEEK ONE OF ARCH LAB
+ */
+
+int main(){
 
 		/*
 		 * 3 different lab assignements
@@ -55,5 +58,11 @@ main(){
 		* 		-mkdir
 		* 		-cat
 		* 		-emacs
-	 	*/ 
+	 	*/
+/*
+ * Lab 1:
+ *	- Will be working with reading input from user
+*/ 
+
+	return 0;
 }
