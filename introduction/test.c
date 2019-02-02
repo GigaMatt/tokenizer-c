@@ -25,6 +25,8 @@
 int main(){
 	void print_hello();
 	void arithmetic_variables();
+	void precision_notes();
+
 	return 0;
 }
 
@@ -55,4 +57,20 @@ void arithmetic_variables(){
 		printf("%d\t%d\n", faren, celc);
 		faren+= step;	
 	}
+}
+
+/**
+ * NOTES ON PRECISION AS SEEN IN PREVIOUS FUNCTION
+ */ 
+void precision_notes(){
+	/**
+	 * %d		Print as a decimal integer value
+	 * %6d		Print as a decimal integer value AT LEAST 6 CHARACTERS WIDE
+	 * 
+	 * %f		Print as a floating-point number
+	 * %6f		Print as a floating-point number AT LEAST 6 CHARACTERS WIDE
+	 * 
+	 * %.2f		Print as a floating-point number 2 CHARACTERS AFTER THE DECIMAL 
+	 * %6 .2f	Print as a floating-point number 2 CHARACTERS AFTER THE DECIMAL && AT LEAST 6 CHARACTERS WIDE
+	 */
 }
