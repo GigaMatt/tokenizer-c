@@ -1,4 +1,4 @@
-#include <stdio.h>	//header file
+#include <stdio.h>	//library that provides several functions for reading/writing one character at a time (getChar() putChar())
 
 /**
  * .h = HEADER FILES
@@ -26,6 +26,7 @@ int main(){
 	void print_hello();
 	void arithmetic_variables();
 	void precision_notes();
+	void looping();
 
 	return 0;
 }
@@ -73,4 +74,23 @@ void precision_notes(){
 	 * %.2f		Print as a floating-point number 2 CHARACTERS AFTER THE DECIMAL 
 	 * %6 .2f	Print as a floating-point number 2 CHARACTERS AFTER THE DECIMAL && AT LEAST 6 CHARACTERS WIDE
 	 */
+}
+
+/**
+ * NOTES ON LOOPING IN C
+ */ 
+void looping(){
+	//For-Statement (relativly similar to Java)
+	int faren;
+	for(faren =0; faren<=300; faren+= 20){	//TODO verifty += works in looping in both Java and C
+		printf("%3d %6.1f\n", faren, (5.0/9.0)*(faren-32));
+	}
+
+	//While-Statement (also similar to Java)
+	//Also refer to arithmetic_variables() method for similar example
+	faren=0;
+	while(faren<=300){
+		printf("%3d %6.1f\n", faren, (5.0/9.0)*(faren-32));
+		faren+=20;
+	}
 }
