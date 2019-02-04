@@ -27,6 +27,7 @@ int main(){
 	void arithmetic_variables();
 	void precision_notes();
 	void looping();
+	void char_input_output();
 
 	return 0;
 }
@@ -93,4 +94,18 @@ void looping(){
 		printf("%3d %6.1f\n", faren, (5.0/9.0)*(faren-32));
 		faren+=20;
 	}
+}
+/**
+ * BASIC CHAR INPUT/OUTPUT IN C
+ */ 
+void char_input_output(){
+	//Recall stdio.h library provides several functions for reading/writing one character at a time
+	//NOTE THIS IS SPECIFICALLY FOR CHARS (NOT STRINGS!)
+	int c;
+	
+	printf("Enter Value:");
+	c = getchar();
+
+	printf("\nYou Entered:");
+	putchar(c);
 }
