@@ -28,6 +28,8 @@ int main(){
 	void precision_notes();
 	void looping();
 	void char_input_output();
+	void reading_copying_strings_files();
+	void getChar_character_counting();
 
 	return 0;
 }
@@ -95,6 +97,7 @@ void looping(){
 		faren+=20;
 	}
 }
+
 /**
  * BASIC CHAR INPUT/OUTPUT IN C
  */ 
@@ -108,4 +111,31 @@ void char_input_output(){
 
 	printf("\nYou Entered:");
 	putchar(c);
+}
+
+/**
+ * FILE COPYING
+ */
+void reading_copying_strings_files(){
+	int c;
+	c=getchar();
+
+	//THIS IS USEFULE FOR READING STRINGS/FILES
+	while(c!=EOF){		//end of file
+		putchar(c);		//output character read
+		c.getChar();	//read another character
+	}
+
+	//ALTERNATIVELY
+	int ch;
+	while((c=getchar() != EOF){		//EOF IS AN INCLUDED LIBRARY
+		putchar(c);
+	}
+}
+
+/**
+ * CHARACTER COUNTING WITH getChar()
+ */
+void getChar_character_counting(){
+	
 }
