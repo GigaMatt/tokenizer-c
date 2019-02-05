@@ -23,6 +23,17 @@
 */
 
 
+//NOTE: METHODS MUST BE DECLARED BEFORE CODE!
+void print_hello();
+void arithmetic_variables();
+void precision_notes();
+void looping();
+void char_input_output();
+void reading_copying_strings_files();
+void getChar_character_counting();
+void c_recursion(number);
+
+
 int main(){
 	void print_hello();
 	void arithmetic_variables();
