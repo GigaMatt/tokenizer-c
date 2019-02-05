@@ -1,4 +1,5 @@
 #include <stdio.h>	//library that provides several functions for reading/writing one character at a time (getChar() putChar())
+#include <stdlib.h>
 
 /**
  * .h = HEADER FILES
@@ -30,6 +31,9 @@ int main(){
 	void char_input_output();
 	void reading_copying_strings_files();
 	void getChar_character_counting();
+
+	int number = 6;
+	void c_recursion(number);
 
 	return 0;
 }
@@ -143,4 +147,18 @@ void getChar_character_counting(){
 	while(getchar()!=EOF)
 		n_char++;
 	printf("%d\n", n_char);
+}
+
+/**
+ * RECURSION: PRINTS NUMBER IN DECIMAL FORM
+ */
+void c_recursion(int number){
+	if(number<0){
+		putchar('-');
+		n-=n;
+	}
+
+	if(number/10)
+		c_recursion(number/10);
+	putchar(number%10+'0');
 }
