@@ -106,11 +106,13 @@ void char_input_output(){
 	//NOTE THIS IS SPECIFICALLY FOR CHARS (NOT STRINGS!)
 	int c;
 	
-	printf("Enter Value:");
+	printf("Enter Value: \n");
 	c = getchar();
 
-	printf("\nYou Entered:");
+	printf("\nYou Entered: ");
 	putchar(c);
+
+	printf("\n");
 }
 
 /**
@@ -137,5 +139,8 @@ void reading_copying_strings_files(){
  * CHARACTER COUNTING WITH getChar()
  */
 void getChar_character_counting(){
-	
+	long n_char = 0;
+	while(getchar()!=EOF)
+		n_char++;
+	printf("%d\n", n_char);
 }
