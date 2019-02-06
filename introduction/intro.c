@@ -56,4 +56,8 @@ main(){
 		* 		-cat
 		* 		-emacs
 	 	*/ 
+/*
+ * Lab 1:
+ * 	-Will be working with reading input from user
+
 }
