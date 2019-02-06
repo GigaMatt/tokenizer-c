@@ -58,19 +58,11 @@ int main(){
 		* 		-mkdir
 		* 		-cat
 		* 		-emacs
-<<<<<<< HEAD
 	 	*/ 
 /*
  * Lab 1:
  * 	-Will be working with reading input from user
+ */
 
-=======
-	 	*/
-/*
- * Lab 1:
- *	- Will be working with reading input from user
-*/ 
-
-	return 0;
->>>>>>> 633e9629d4f78c38b61ac3748ecc37117858535d
+	return 0;	
 }
