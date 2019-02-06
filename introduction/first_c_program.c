@@ -20,6 +20,7 @@
  * TO EXECUTE CODE:
  * 		1) gcc program_name.c -o my_program_name
  * 		2) ./my_program_name
+ * 			Code is packaged into my_program_name file
 */
 
 
@@ -173,3 +174,6 @@ void c_recursion(int number){
 		c_recursion(number/10);
 	putchar(number%10+'0');
 }
+
+//TODO add notes on goto OUT
+//Note: loops are high-level
