@@ -1,15 +1,25 @@
-# Computer Arch Project-Work (Spring 2019)
+Lab Project 1: Building a Tokenizer
+===================================
 
-## Note: Placeholder name. Will change at a later date.
+## Overview
+The objective for this first lab project is to build a tokenizer that
+maintains a history. Tokenizing is the process of dividing a string into
+tokens by some delimeter (e.g. the string librarys split() function).
+Consider tokenizing the string “The cake is a lie!” using the space
+character. This would result in: \[“The”, “cake”, “is”, “a”, “lie!”\].
 
-### Directory Navigation
-**/introduction**: Notes on labwork requirements & sample C code to become familiar with the language
 
-### How To Compile
-1. Naviagte to program-specific subdirectory via the terminal, i.e **\introduction** _(NOTE: This directory is composed of notes and will not compile; copy+paste individual functions for testing)_
-2. Type **.gcc program_name.c -o my_program_name** _This will create an executable program file in the working subdirectory_
-3. Verify **my_program_name** is in the working subdirectory
-4. Type **./my_program_name** to run the _.c_ file
 
-### Mild Warning
-_This code has been written by an individual with novice experience in C programming. Run this in a virtual machine or at your own risk on your primary machine._
+## How To Compile/Run
+1. Open the directory to **/ai-tree-searches/test_case_file files/**
+2. Execute jar file by typing in: **java -jar AIHW2Lab.jar test_case_size_size.txt BFS**
+
+Alternatively, the _.java_ files may be imported into your IDE and run locally
+
+## Dependancies
+1. Compile the *interface.c* program by navigating to the project directory in the terminal and typing **gcc interface.c**
+2. Execute the program in the terminal by typing **./a.out**
+
+## Contributions
+1.  Hiram Rios: Advising that adding an integer argument to find_word_end() would allow for proper tokenizing.
+2.  Matthew Iglesias: Identify the position of the end of a word by checking for spaces or NULL values.
