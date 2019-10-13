@@ -1,38 +1,46 @@
 #ifndef _TOKENIZER_
 #define _TOKENIZER_
 
-/* Count the number of characters in the string argument. */
-int string_length(char*);
+/* Counts the number of characters in the string argument. */
+int string_length(char* str);
 
-/* Evaluate if the character c is an acceptable character for
-   a token (e.g. '0' is acceptable but '\t' is not.
+/* Evaluates if the character c is an acceptable character for
+   a token. Acceptable characters include any alphanumeric or
+   special character. Unacceptable characters include any
+   whitespace or control characters.
    Returns 0 if not, 1 if yes. */
 char is_valid_character(char c);
 
-/* Find the starting index for the next word.
-   char* str - the string to search.
-   int pos - the index to start searching. */
-int find_word_start(char*, int);
+/* Finds the next word in the string. 
+   For example, given an input of "  my cake" the function
+   should return "my cake". */
+char* find_word_start(char* str);
 
-/* Find the end index for the next word.
-   char* str - the string to search.
-   int pos - the index to start searching. */
-int find_word_end(char*, int);
+/* Finds the end of current word.
+   For example, given an input of "my cake" the function
+   should return " cake". */
+char* find_word_end(char* str);
 
-/* Count the number of words in the string argument. */
-int count_words(char*);
+/* Counts the number of words in the string argument. */
+int count_words(char* str);
 
-/* Print all tokens. */
-void print_tokens(char**);
-
-/* Free all tokens and the array containing the tokens. */
-void free_tokens(char**);
+/* Copies the next word in str to copy. */
+void copy_word(char* str, char* copy);
 
 /* Tokenizes the string argument into an array of tokens.
    For example, "hello world string" would result in:
      tokens[0] = "hello"
      tokens[1] = "world"
      tokens[2] = "string" */
-char** tokenize(char*);
+char** tokenize(char* str);
+
+/* Prints all tokens. */
+void print_tokens(char** tokens);
+
+/* Frees all tokens and the array containing the tokens. */
+void free_tokens(char** tokens);
+
+/* Copy Parameter & return */
+char* token_copy(char* tokens);
 
 #endif

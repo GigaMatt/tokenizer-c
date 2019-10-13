@@ -1,25 +1,29 @@
-Lab Project 1: Building a Tokenizer
-===================================
+# Lab Project 1: Building a Tokenizer
 
-## Overview
-The objective for this first lab project is to build a tokenizer that
+## Introduction ヾ(⌐□_□)ノ♪
+Welcome, weary traveller. My objective for the first lab project is to build a tokenizer that
 maintains a history. Tokenizing is the process of dividing a string into
 tokens by some delimeter (e.g. the string librarys split() function).
 Consider tokenizing the string “The cake is a lie!” using the space
-character. This would result in: \[“The”, “cake”, “is”, “a”, “lie!”\].
+character. This would result in: \[“The”, “cake”, “is”, “a”, “lie!”\]. This lab isn't much, but it's honest work.
 
+![https://i.kym-cdn.com/entries/icons/mobile/000/028/021/work](https://i.kym-cdn.com/entries/icons/mobile/000/028/021/work.jpg)
 
+### Compiling & Running the Code
+To compile & execute the user interface program, open the command prompt and enter
+```sh
+cd tokenizer-GigaMatt-1\
+sudo make
+./tokenizer.o
+```
 
-## How To Compile/Run
-1. Open the directory to **/ai-tree-searches/test_case_file files/**
-2. Execute jar file by typing in: **java -jar AIHW2Lab.jar test_case_size_size.txt BFS**
+### Dependencies
+1. The SystemsVM virtual machine provided by UTEP CS 3432 OR<br />
+2. A Linux-based virtual machine.<br />
 
-Alternatively, the _.java_ files may be imported into your IDE and run locally
+### Contributions
+1. Daniel Cervantes (pointing me to use fgets() for user input) & booleans in C are integer 0s/1s.<br />
+2. Wan Koo for teaching me the differences between <.h> & ".h" imports.<br />
 
-## Dependancies
-1. Compile the *interface.c* program by navigating to the project directory in the terminal and typing **gcc interface.c**
-2. Execute the program in the terminal by typing **./a.out**
-
-## Contributions
-1.  Hiram Rios: Advising that adding an integer argument to find_word_end() would allow for proper tokenizing.
-2.  Matthew Iglesias: Identify the position of the end of a word by checking for spaces or NULL values.
+### Warnings
+1. Although the dependencies call for the use of a virual machine, you may use a local Linux OS to compile & execute this code. **WARNING** This should be reserved for advanced users. 
